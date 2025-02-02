@@ -1,0 +1,11 @@
+{
+   "app_description": {
+      "message": "the New Tab page with a simple clock With date and month."
+   },
+   "app_name": {
+      "message": "Calendar Clock - New Tab"
+   },
+   "app_short_name": {
+      "message": "newtab"
+   }
+}

@@ -1,0 +1,11 @@
+{
+    "app_description": {
+        "message": "날짜와 월의 간단한 시계가있는 새 탭 페이지."
+    },
+    "app_name": {
+        "message": "캘린더 시계 - 새 탭"
+    },
+    "app_short_name": {
+        "message": "Newtab"
+    }
+}
