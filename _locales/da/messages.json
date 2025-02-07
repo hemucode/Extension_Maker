@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Slip lyden af lyden på din browser!Forøg volumen til maks. Niveau og kontroller IT for enhver fane."
+    },
+    "app_name": {
+        "message": "Volume Booster - Forøg lyd"
+    },
+    "active_tabs": {
+        "message": "Aktive faner, der spiller lyd:"
+    },
+    "deactive_tabs": {
+        "message": "Der er ingen faner med lyd lige nu"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "lys"
+    },
+    "dark": {
+        "message": "mørk"
+    },
+    "volume": {
+        "message": "Bind"
+    },
+    "notice": {
+        "message": "Hold dette vindue åbent for at øge din lyd.Dette skyldes krav om privatlivets fred i browseren."
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Scatena il potere del suono sul tuo browser!Aumenta il volume a livello massimo e controlla l'IT di qualsiasi scheda."
+    },
+    "app_name": {
+        "message": "Volume Booster - Aumenta il suono"
+    },
+    "active_tabs": {
+        "message": "Schede attive che riproducono audio:"
+    },
+    "deactive_tabs": {
+        "message": "Non ci sono schede con audio in questo momento"
+    },
+    "reset": {
+        "message": "reset"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Tieni questa finestra aperta per aumentare il tuo suono.Ciò è dovuto al requisito della privacy da parte del browser."
+    }
+}

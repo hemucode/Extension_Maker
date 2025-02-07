@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Liberte o poder do som no seu navegador!Aumente o volume para o nível máximo e controle o TI de qualquer guia."
+    },
+    "app_name": {
+        "message": "Volume Booster - Aumentar o som"
+    },
+    "active_tabs": {
+        "message": "Guias ativas jogando áudio:"
+    },
+    "deactive_tabs": {
+        "message": "Não há guias com áudio agora"
+    },
+    "light": {
+        "message": "luz"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Por favor, mantenha esta janela aberta para aumentar seu som.Isso se deve ao requisito de privacidade pelo navegador."
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Ħoll il-qawwa tal-ħoss fuq il-browser tiegħek!Iżżid il-volum għal-livell massimu u tikkontrolla l-IT ta 'kwalunkwe tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Iżżid il-ħoss"
+    },
+    "active_tabs": {
+        "message": "Tabs attivi li jilagħbu l-awdjo:"
+    },
+    "deactive_tabs": {
+        "message": "M'hemm l-ebda tabs bl-awdjo bħalissa"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "dawl"
+    },
+    "dark": {
+        "message": "dlam"
+    },
+    "volume": {
+        "message": "Volum"
+    },
+    "notice": {
+        "message": "Jekk jogħġbok żomm din it-tieqa miftuħa biex tagħti spinta lill-ħoss tiegħek.Dan huwa dovut għar-rekwiżit tal-privatezza mill-browser."
+    }
+}

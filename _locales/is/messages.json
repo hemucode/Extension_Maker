@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Losaðu hljóðið í vafranum þínum!Auka rúmmál að hámarki og stjórna upplýsingatækni sem er á hvaða flipa sem er."
+    },
+    "app_name": {
+        "message": "Volume Booster - Auka hljóð"
+    },
+    "active_tabs": {
+        "message": "Virkir flipar sem spila hljóð:"
+    },
+    "deactive_tabs": {
+        "message": "Það eru engir flipar með hljóð núna"
+    },
+    "light": {
+        "message": "Ljós"
+    },
+    "volume": {
+        "message": "Bindi"
+    },
+    "notice": {
+        "message": "Vinsamlegast hafðu þennan glugga opinn til að auka hljóðið þitt.Þetta er vegna persónuverndarkröfu vafrans."
+    }
+}

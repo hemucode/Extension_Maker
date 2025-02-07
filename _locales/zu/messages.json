@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Vula amandla omsindo esipheqululini sakho!Khuphula ivolumu ku-Max Level futhi ulawule yinoma iyiphi ithebhu."
+    },
+    "app_name": {
+        "message": "Volume Booster - Khulisa umsindo"
+    },
+    "active_tabs": {
+        "message": "Amathebhu asebenzayo adlala umsindo:"
+    },
+    "deactive_tabs": {
+        "message": "Awekho amathebhu anomsindo manje"
+    },
+    "popup": {
+        "message": "vela"
+    },
+    "volume": {
+        "message": "Ukuvimbanisa"
+    },
+    "notice": {
+        "message": "Sicela ugcine lewindi livulekele ukukhulisa umsindo wakho.Lokhu kungenxa yesidingo sobumfihlo esipheqululini."
+    }
+}

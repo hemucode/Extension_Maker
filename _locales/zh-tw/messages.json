@@ -1,0 +1,32 @@
+{
+    "app_description": {
+        "message": "在瀏覽器上釋放聲音的力量！將音量增加到最大級別並控制任何選項卡的IT。"
+    },
+    "app_name": {
+        "message": "Volume Booster - 增加聲音"
+    },
+    "active_tabs": {
+        "message": "主動選項卡播放音頻："
+    },
+    "deactive_tabs": {
+        "message": "現在沒有音頻標籤"
+    },
+    "popup": {
+        "message": "彈出窗口"
+    },
+    "reset": {
+        "message": "重置"
+    },
+    "light": {
+        "message": "光"
+    },
+    "dark": {
+        "message": "黑暗的"
+    },
+    "volume": {
+        "message": "體積"
+    },
+    "notice": {
+        "message": "請保持此窗口打開以增強您的聲音。這是由於瀏覽器的隱私要求。"
+    }
+}

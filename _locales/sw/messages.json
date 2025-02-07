@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Unleash nguvu ya sauti kwenye kivinjari chako!Ongeza kiasi kwa kiwango cha max na udhibiti wa tabo yoyote."
+    },
+    "app_name": {
+        "message": "Volume Booster - Ongeza sauti"
+    },
+    "active_tabs": {
+        "message": "Tabo zinazofanya kazi zinacheza sauti:"
+    },
+    "deactive_tabs": {
+        "message": "Hakuna tabo zilizo na sauti hivi sasa"
+    },
+    "dark": {
+        "message": "Giza"
+    },
+    "volume": {
+        "message": "Kiasi"
+    },
+    "notice": {
+        "message": "Tafadhali weka dirisha hili wazi ili kuongeza sauti yako.Hii ni kwa sababu ya hitaji la faragha na kivinjari."
+    }
+}

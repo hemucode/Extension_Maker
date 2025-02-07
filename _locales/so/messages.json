@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "U gudub awooda dhawaqa biraawsarkaaga!Kordhi mugga illaa heerka ugu badnaan oo xakamee tab kasta."
+    },
+    "app_name": {
+        "message": "Volume Booster - Kor u kaca codka"
+    },
+    "active_tabs": {
+        "message": "TAB-da firfircoon oo ku ciyaaraya maqal:"
+    },
+    "deactive_tabs": {
+        "message": "Ma jiraan wax taban oo dhadig ah hadda"
+    },
+    "volume": {
+        "message": "Mug"
+    },
+    "notice": {
+        "message": "Fadlan daaqaddan u furan si aad u xoojiso codkaaga.Tan waxaa u sabab ah shuruudaha qarsoodiga ah ee biraawsarka."
+    }
+}

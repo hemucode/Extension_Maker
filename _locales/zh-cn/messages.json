@@ -1,0 +1,32 @@
+{
+    "app_description": {
+        "message": "在浏览器上释放声音的力量！将音量增加到最大级别并控制任何选项卡的IT。"
+    },
+    "app_name": {
+        "message": "Volume Booster - 增加声音"
+    },
+    "active_tabs": {
+        "message": "主动选项卡播放音频："
+    },
+    "deactive_tabs": {
+        "message": "现在没有音频标签"
+    },
+    "popup": {
+        "message": "弹出窗口"
+    },
+    "reset": {
+        "message": "重置"
+    },
+    "light": {
+        "message": "光"
+    },
+    "dark": {
+        "message": "黑暗的"
+    },
+    "volume": {
+        "message": "体积"
+    },
+    "notice": {
+        "message": "请保持此窗口打开以增强您的声音。这是由于浏览器的隐私要求。"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Cire ikon sauti akan mai bincikenka!Exara girma zuwa matakin Max kuma sarrafa shi na kowane shafin."
+    },
+    "app_name": {
+        "message": "Volume Booster - Kara sauti"
+    },
+    "active_tabs": {
+        "message": "Shafuka masu aiki suna kunna Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Babu shafuka tare da Audio a yanzu"
+    },
+    "light": {
+        "message": "haske"
+    },
+    "dark": {
+        "message": "m"
+    },
+    "volume": {
+        "message": "Girma"
+    },
+    "notice": {
+        "message": "Da fatan za a adana wannan taga a buɗe don haɓaka sautinku.Wannan ya faru ne saboda laifofin sirri da mai binciken."
+    }
+}

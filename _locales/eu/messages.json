@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Soinuaren boterea zure arakatzailean askatu!Handitu bolumena maila maximora eta kontrolatu edozein fitxa."
+    },
+    "app_name": {
+        "message": "Volume Booster - Soinua handitu"
+    },
+    "active_tabs": {
+        "message": "Fitxa aktiboak Audio erreproduzitzen:"
+    },
+    "deactive_tabs": {
+        "message": "Ez dago fitxarik audioarekin oraintxe bertan"
+    },
+    "light": {
+        "message": "arin"
+    },
+    "dark": {
+        "message": "ilun"
+    },
+    "volume": {
+        "message": "Ozentasun"
+    },
+    "notice": {
+        "message": "Mesedez, mantendu leiho hau irekita zure soinua hobetzeko.Hau arakatzaileak pribatutasun eskakizuna da."
+    }
+}

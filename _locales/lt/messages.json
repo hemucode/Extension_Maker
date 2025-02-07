@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Išlaisvinkite garso galią savo naršyklėje!Padidinkite garsumą iki maksimalaus lygio ir valdykite bet kurio skirtuko IT."
+    },
+    "app_name": {
+        "message": "Volume Booster - Padidinti garsą"
+    },
+    "active_tabs": {
+        "message": "Aktyvūs skirtukai, grojantys garso įrašą:"
+    },
+    "deactive_tabs": {
+        "message": "Šiuo metu nėra skirtukų su garsu"
+    },
+    "volume": {
+        "message": "Apimtis"
+    },
+    "notice": {
+        "message": "Prašau, kad šis langas būtų atviras, kad padidintumėte savo garsą.Taip yra dėl naršyklės privatumo reikalavimo."
+    }
+}

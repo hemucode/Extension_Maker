@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Hêza dengê li ser geroka xwe bişewitînin!Volume zêdekirina asta Max û kontrol bikin ku ew her tabê kontrol bike."
+    },
+    "app_name": {
+        "message": "Volume Booster - Deng zêde bikin"
+    },
+    "active_tabs": {
+        "message": "Tabloyên çalak Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tabloyên bi dengî rast nabin"
+    },
+    "light": {
+        "message": "sivik"
+    },
+    "dark": {
+        "message": "tarî"
+    },
+    "volume": {
+        "message": "Bend"
+    },
+    "notice": {
+        "message": "Ji kerema xwe vê pencereyê vekin da ku dengê xwe xurt bikin.Ev ji ber hewcedariya nepenîtiyê ji hêla gerokê ve ye."
+    }
+}

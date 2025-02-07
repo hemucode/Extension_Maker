@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "သင်၏ browser ပေါ်ရှိအသံစွမ်းအားကိုဖော်ထုတ်ပါ။အသံအတိုးအကျယ်ကို Max Level သို့တိုးမြှင့်။ မည်သည့် tab ကိုမဆိုထိန်းချုပ်ပါ။"
+    },
+    "app_name": {
+        "message": "Volume Booster - အသံတိုး"
+    },
+    "active_tabs": {
+        "message": "Active tabs များအသံကစားခြင်း -"
+    },
+    "deactive_tabs": {
+        "message": "အခုအသံနဲ့ tabs မရှိဘူး"
+    },
+    "volume": {
+        "message": "အရွယ်အစား"
+    },
+    "notice": {
+        "message": "သင်၏အသံကိုမြှင့်တင်ရန်ဤ 0 င်းဒိုးကိုဖွင့်ပါ။၎င်းသည် browser ၏ privacy လိုအပ်ချက်ကြောင့်ဖြစ်သည်။"
+    }
+}

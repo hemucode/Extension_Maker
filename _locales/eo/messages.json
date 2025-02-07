@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Malfermu la potencon de sono en via retumilo!Pliigi volumon al maksimuma nivelo kaj kontroli la IT de iu ajn langeto."
+    },
+    "app_name": {
+        "message": "Volume Booster - Pliigi sonon"
+    },
+    "active_tabs": {
+        "message": "Aktivaj langetoj ludantaj audio:"
+    },
+    "deactive_tabs": {
+        "message": "Ne estas langetoj kun audio nun"
+    },
+    "light": {
+        "message": "Lumo"
+    },
+    "volume": {
+        "message": "Volumo"
+    },
+    "notice": {
+        "message": "Bonvolu teni ĉi tiun fenestron malfermita por akceli vian sonon.Ĉi tio estas pro privateca postulo de la retumilo."
+    }
+}

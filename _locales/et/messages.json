@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Vabastage oma brauseri heli jõud!Suurendage maht maksimaalselt ja kontrollige mis tahes vahelehte IT -d."
+    },
+    "app_name": {
+        "message": "Volume Booster - Suurendama heli"
+    },
+    "active_tabs": {
+        "message": "Aktiivsed vahekaardid, mis mängivad heli:"
+    },
+    "deactive_tabs": {
+        "message": "Praegu pole heliga vahekaarte"
+    },
+    "popup": {
+        "message": "hüpik"
+    },
+    "light": {
+        "message": "hele"
+    },
+    "dark": {
+        "message": "tume"
+    },
+    "volume": {
+        "message": "Maht"
+    },
+    "notice": {
+        "message": "Hoidke seda akent oma heli suurendamiseks avatud.See on tingitud brauseri privaatsuse nõudest."
+    }
+}

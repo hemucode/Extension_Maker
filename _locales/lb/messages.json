@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Entlooss d'Kraaft vum Toun op Ärem Browser!Erhéijung Volumen bis maximal Niveau a kontrolléiert dat vun all Tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Erhéijung Toun"
+    },
+    "active_tabs": {
+        "message": "Aktiv Tabs spillen Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Et gi keng Tabs mat Audio elo"
+    },
+    "volume": {
+        "message": "Vuesso"
+    },
+    "notice": {
+        "message": "W.e.g. behält dës Fënster op fir Ären Toun ze boost.Dëst ass wéinst der Privatsphärsbedingung vum Browser."
+    }
+}

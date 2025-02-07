@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Libérez la puissance du son sur votre navigateur!Augmentez le volume au niveau maximum et contrôlez l'IT de n'importe quel onglet."
+    },
+    "app_name": {
+        "message": "Volume Booster - Augmenter le son"
+    },
+    "active_tabs": {
+        "message": "Onglets actifs jouant audio:"
+    },
+    "deactive_tabs": {
+        "message": "Il n'y a pas d'onglets avec audio en ce moment"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Veuillez garder cette fenêtre ouverte pour stimuler votre son.Cela est dû aux exigences de confidentialité par le navigateur."
+    }
+}

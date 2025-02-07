@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Lepaskan kuasa bunyi pada penyemak imbas anda!Meningkatkan jumlah ke tahap maksimum dan mengawal IT dari mana -mana tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Meningkatkan bunyi"
+    },
+    "active_tabs": {
+        "message": "Tab aktif bermain audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tidak ada tab dengan audio sekarang"
+    },
+    "popup": {
+        "message": "Popup"
+    },
+    "volume": {
+        "message": "Kelantangan"
+    },
+    "notice": {
+        "message": "Sila pastikan tetingkap ini terbuka untuk meningkatkan bunyi anda.Ini disebabkan oleh keperluan privasi oleh penyemak imbas."
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Ureash cumhacht na fuaime ar do bhrabhsálaí!Méadaigh an toirt go dtí an uasleibhéal agus rialú a dhéanamh ar aon chluaisín."
+    },
+    "app_name": {
+        "message": "Volume Booster - Fuaim a mhéadú"
+    },
+    "active_tabs": {
+        "message": "Cluaisíní gníomhacha ag imirt fuaime:"
+    },
+    "deactive_tabs": {
+        "message": "Níl aon chluaisíní le fuaim anois"
+    },
+    "light": {
+        "message": "léas"
+    },
+    "volume": {
+        "message": "Toirt"
+    },
+    "notice": {
+        "message": "Coinnigh an fhuinneog seo ar oscailt chun do fhuaim a threisiú.Tá sé seo mar gheall ar riachtanas príobháideachais ag an mbrabhsálaí."
+    }
+}

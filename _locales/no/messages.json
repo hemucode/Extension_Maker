@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Slipp løs kraften i lyden i nettleseren din!Øk volumet til maks nivå og kontroller det for en hvilken som helst fan."
+    },
+    "app_name": {
+        "message": "Volume Booster - Øk lyden"
+    },
+    "active_tabs": {
+        "message": "Aktive faner som spiller lyd:"
+    },
+    "deactive_tabs": {
+        "message": "Det er ingen faner med lyd akkurat nå"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "lys"
+    },
+    "dark": {
+        "message": "mørk"
+    },
+    "volume": {
+        "message": "Volum"
+    },
+    "notice": {
+        "message": "Hold dette vinduet åpent for å øke lyden.Dette skyldes personvernkrav fra nettleseren."
+    }
+}

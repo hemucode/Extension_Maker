@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Ilabas ang lakas ng tunog sa iyong browser!Dagdagan ang dami sa antas ng max at kontrolin ang IT ng anumang tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Dagdagan ang tunog"
+    },
+    "active_tabs": {
+        "message": "Mga aktibong tab na naglalaro ng audio:"
+    },
+    "deactive_tabs": {
+        "message": "Walang mga tab na may audio ngayon"
+    },
+    "popup": {
+        "message": "Popup"
+    },
+    "volume": {
+        "message": "Dami"
+    },
+    "notice": {
+        "message": "Mangyaring panatilihing bukas ang window na ito upang mapalakas ang iyong tunog.Ito ay dahil sa kinakailangan sa privacy ng browser."
+    }
+}

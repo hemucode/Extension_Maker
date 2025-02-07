@@ -1,1 +1,29 @@
-{"app_description": {"message": "日付と月のシンプルなクロックを備えた新しいタブページ。"}, "app_name": {"message": "カレンダークロック - 新しいタブ"}, "app_short_name": {"message": "newtab"}}
+{
+    "app_description": {
+        "message": "ブラウザで音の力を解き放ちます！ボリュームを最大レベルに増やし、任意のタブのITを制御します。"
+    },
+    "app_name": {
+        "message": "Volume Booster - 音を上げます"
+    },
+    "active_tabs": {
+        "message": "オーディオを再生するアクティブなタブ："
+    },
+    "deactive_tabs": {
+        "message": "現在、オーディオのタブはありません"
+    },
+    "reset": {
+        "message": "リセット"
+    },
+    "light": {
+        "message": "ライト"
+    },
+    "dark": {
+        "message": "暗い"
+    },
+    "volume": {
+        "message": "音量"
+    },
+    "notice": {
+        "message": "このウィンドウを開いて、音を上げてください。これは、ブラウザによるプライバシー要件によるものです。"
+    }
+}

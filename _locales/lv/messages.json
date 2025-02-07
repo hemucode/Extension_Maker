@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Atlaidiet skaņas spēku pārlūkprogrammā!Palieliniet tilpumu līdz maksimālajam līmenim un kontrolējiet jebkuras cilnes IT."
+    },
+    "app_name": {
+        "message": "Volume Booster - Palielināt skaņu"
+    },
+    "active_tabs": {
+        "message": "Aktīvas cilnes, kas spēlē audio:"
+    },
+    "deactive_tabs": {
+        "message": "Šobrīd nav cilņu ar audio"
+    },
+    "volume": {
+        "message": "Tilpums"
+    },
+    "notice": {
+        "message": "Lūdzu, saglabājiet šo logu atvērtu, lai palielinātu skaņu.Tas ir saistīts ar pārlūkprogrammas privātuma prasību."
+    }
+}

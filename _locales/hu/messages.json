@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Engedje el a hang erejét a böngészőjén!Növelje a hangerőt a maximális szintre, és ellenőrizze bármely lap IT -jét."
+    },
+    "app_name": {
+        "message": "Volume Booster - Növelje a hangot"
+    },
+    "active_tabs": {
+        "message": "Audio aktív fülek:"
+    },
+    "deactive_tabs": {
+        "message": "Jelenleg nincsenek audióval ellátott fülek"
+    },
+    "light": {
+        "message": "fény"
+    },
+    "volume": {
+        "message": "Kötet"
+    },
+    "notice": {
+        "message": "Kérjük, tartsa nyitva ezt az ablakot, hogy növelje a hangját.Ennek oka a böngésző adatvédelmi követelménye."
+    }
+}

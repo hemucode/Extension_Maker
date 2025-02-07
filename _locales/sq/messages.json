@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Lëshoni fuqinë e tingullit në shfletuesin tuaj!Rritni vëllimin në nivelin maksimal dhe kontrolloni atë të çdo skedari."
+    },
+    "app_name": {
+        "message": "Volume Booster - Rritja e tingullit"
+    },
+    "active_tabs": {
+        "message": "Skedat aktive që luajnë audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tani nuk ka skeda me audio"
+    },
+    "volume": {
+        "message": "Vëllim"
+    },
+    "notice": {
+        "message": "Ju lutemi mbajeni këtë dritare të hapur për të rritur tingullin tuaj.Kjo është për shkak të kërkesës së intimitetit nga shfletuesi."
+    }
+}

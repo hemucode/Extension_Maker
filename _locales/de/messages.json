@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Entfesselt die Klangkraft auf Ihrem Browser!Erhöhen Sie das Volumen auf maximales Niveau und steuern Sie die IT eines beliebigen Registerkartens."
+    },
+    "app_name": {
+        "message": "Volume Booster - Klang erhöhen"
+    },
+    "active_tabs": {
+        "message": "Aktive Registerkarten spielen Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Im Moment gibt es keine Registerkarten mit Audio"
+    },
+    "popup": {
+        "message": "Popup"
+    },
+    "light": {
+        "message": "Licht"
+    },
+    "volume": {
+        "message": "Volumen"
+    },
+    "notice": {
+        "message": "Bitte halten Sie dieses Fenster offen, um Ihren Sound zu steigern.Dies ist auf die Datenschutzanforderung durch den Browser zurückzuführen."
+    }
+}

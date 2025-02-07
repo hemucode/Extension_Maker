@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Vapauta äänen voiman selaimessasi!Lisää äänenvoimakkuutta maksimitasolle ja hallitse minkä tahansa välilehden IT."
+    },
+    "app_name": {
+        "message": "Volume Booster - Lisätä ääntä"
+    },
+    "active_tabs": {
+        "message": "Aktiiviset välilehdet äänellä:"
+    },
+    "deactive_tabs": {
+        "message": "Äänellä ei ole nyt välilehtiä"
+    },
+    "volume": {
+        "message": "Tilavuus"
+    },
+    "notice": {
+        "message": "Pidä tämä ikkuna auki äänen lisäämiseksi.Tämä johtuu selaimen yksityisyyden suojaa koskevasta vaatimuksesta."
+    }
+}

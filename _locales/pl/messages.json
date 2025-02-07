@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Uwolnij moc dźwięku w przeglądarce!Zwiększ objętość do maksymalnego poziomu i kontroluj IT dowolnej karty."
+    },
+    "app_name": {
+        "message": "Volume Booster - Zwiększ dźwięk"
+    },
+    "active_tabs": {
+        "message": "Aktywne zakładki odtwarzające dźwięk:"
+    },
+    "deactive_tabs": {
+        "message": "W tej chwili nie ma kart z dźwiękiem"
+    },
+    "volume": {
+        "message": "Tom"
+    },
+    "notice": {
+        "message": "Zachowaj otwarte okno, aby zwiększyć dźwięk.Wynika to z wymogu prywatności przez przeglądarkę."
+    }
+}

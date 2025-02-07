@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Mbukak kunci swara ing browser sampeyan!Nambah volume menyang level maksimal lan ngontrol tab apa wae."
+    },
+    "app_name": {
+        "message": "Volume Booster - Nambah swara"
+    },
+    "active_tabs": {
+        "message": "Tab Aktif Muter Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Ora ana tab kanthi audio saiki"
+    },
+    "reset": {
+        "message": "Reset"
+    },
+    "light": {
+        "message": "cahya"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Tulung jendhela iki mbukak kanggo nambah swara sampeyan.Iki amarga syarat privasi browser browser."
+    }
+}

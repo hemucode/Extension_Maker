@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Mamaha ny herin'ny feo ao amin'ny navigateur!Ampitomboy ny haavon'ny haavony sy ny fifehezana ny tabilao rehetra."
+    },
+    "app_name": {
+        "message": "Volume Booster - Mampitombo feo"
+    },
+    "active_tabs": {
+        "message": "TAB mavitrika milalao Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tsy misy tabilao misy feo amin'izao fotoana izao"
+    },
+    "volume": {
+        "message": "BOKY FAHA-"
+    },
+    "notice": {
+        "message": "Azafady mba avelao misokatra ity varavarankely ity mba hampitombo ny feonao.Izany dia noho ny fitakiana ny tsiambaratelo amin'ny alàlan'ny browser."
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "በአሳሽዎ ላይ የድምፅ ኃይልን ይለቀቁ!መጠንን ወደ ማክስ ደረጃ ይጨምሩ እና የማንኛውንም ትሩ ይቆጣጠሩ."
+    },
+    "app_name": {
+        "message": "Volume Booster - ድምፁን ይጨምሩ"
+    },
+    "active_tabs": {
+        "message": "ንቁ ትሮች ድምጽን የሚጫወቱ"
+    },
+    "deactive_tabs": {
+        "message": "አሁን ኦዲዲዮ ከኖራዎች ጋር ምንም ትሮች የሉም"
+    },
+    "popup": {
+        "message": "ብቅባይ"
+    },
+    "light": {
+        "message": "ብርሃን"
+    },
+    "dark": {
+        "message": "ጨለማ"
+    },
+    "volume": {
+        "message": "ድምጽ"
+    },
+    "notice": {
+        "message": "እባክዎ ድምጽዎን ለማሳደግ ይህንን መስኮት ይክፈቱ.ይህ የሚሆነው በአሳሹ የግላዊነት መስፈርቶች ምክንያት ነው."
+    }
+}

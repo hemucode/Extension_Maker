@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Unleash lub zog ntawm lub suab ntawm koj lub browser!Nce ntim mus rau Max theem thiab tswj nws ntawm ib qho tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Ua kom nce suab"
+    },
+    "active_tabs": {
+        "message": "Nquag tabs ua si audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tsis muaj tabs nrog audio tam sim no"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "volume": {
+        "message": "Qho loj hnyav"
+    },
+    "notice": {
+        "message": "Thov khaws lub rooj zaum qhib no los txhawb koj lub suab.Qhov no yog vim yog kev ceev ntiag tug uas xav tau los ntawm browser."
+    }
+}

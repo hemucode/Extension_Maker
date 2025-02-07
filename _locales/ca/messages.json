@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Desfer el poder del so al navegador.Augmenteu el volum al nivell màxim i controleu la pestanya."
+    },
+    "app_name": {
+        "message": "Volume Booster - Augmentar el so"
+    },
+    "active_tabs": {
+        "message": "Pestanyes actives reproduint àudio:"
+    },
+    "deactive_tabs": {
+        "message": "Ara mateix no hi ha pestanyes amb àudio"
+    },
+    "light": {
+        "message": "llum"
+    },
+    "dark": {
+        "message": "fosc"
+    },
+    "volume": {
+        "message": "Volum"
+    },
+    "notice": {
+        "message": "Mantingueu aquesta finestra oberta per augmentar el so.Això es deu al requisit de privadesa del navegador."
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Desata o poder do son no teu navegador.Aumenta o volume ata o nivel máximo e controle o TI de calquera pestana."
+    },
+    "app_name": {
+        "message": "Volume Booster - Aumentar o son"
+    },
+    "active_tabs": {
+        "message": "Fichas activas xogando a audio:"
+    },
+    "deactive_tabs": {
+        "message": "Non hai pestanas con audio agora mesmo"
+    },
+    "light": {
+        "message": "Luz"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Manteña esta xanela aberta para aumentar o son.Isto débese ao requisito de privacidade do navegador."
+    }
+}

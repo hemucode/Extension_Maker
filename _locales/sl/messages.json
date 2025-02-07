@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Sprostite moč zvoka v vašem brskalniku!Povečajte glasnost na največjo raven in nadzorujte IT na katerem koli zavihku."
+    },
+    "app_name": {
+        "message": "Volume Booster - Povečajte zvok"
+    },
+    "active_tabs": {
+        "message": "Aktivni zavihki predvajanje zvoka:"
+    },
+    "deactive_tabs": {
+        "message": "Trenutno ni zavihkih z zvokom"
+    },
+    "volume": {
+        "message": "Glasnost"
+    },
+    "notice": {
+        "message": "Prosimo, hranite to okno, da boste povečali zvok.To je posledica zasebnosti s strani brskalnika."
+    }
+}

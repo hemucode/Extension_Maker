@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Unleash virtute sonus in pasco!Auget Volume ad Max campester et control de eo tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - ADMODO"
+    },
+    "active_tabs": {
+        "message": "Active Tabs Ludens Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Nulla tabs cum audio iam"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "reset": {
+        "message": "reset"
+    },
+    "volume": {
+        "message": "Volumen"
+    },
+    "notice": {
+        "message": "Suscipe hoc fenestra aperta ad boost vestri sonus.Hoc ex secretum postulationem a pasco."
+    }
+}

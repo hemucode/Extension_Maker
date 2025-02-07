@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "E hoʻokaʻawale i ka mana o ke kani ma kāu polokalamu!Hoʻonui i ka nui i ka pae max a me ka kāohi i kēlā me kēia papa."
+    },
+    "app_name": {
+        "message": "Volume Booster - E hoʻonui i ke kani leo"
+    },
+    "active_tabs": {
+        "message": "Nā papa hana ikaika e pāʻani ana i ka leo:"
+    },
+    "deactive_tabs": {
+        "message": "ʻAʻohe mau tabs me ka leo leo i kēia manawa"
+    },
+    "light": {
+        "message": "māmā"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Eʻoluʻolu e hoʻomau i kēia puka aniani e hoʻonui i kāu kani.ʻO kēia ma muli o nā koi pilikino e ka polokalamu."
+    }
+}

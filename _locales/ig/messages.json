@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Wepu ike nke ụda na ihe nchọgharị gị!Mmụba na ọkwa Max ma chịkwaa ya nke taabụ ọ bụla."
+    },
+    "app_name": {
+        "message": "Volume Booster - Mụbaa ụda"
+    },
+    "active_tabs": {
+        "message": "Taabụ na-arụ ọrụ na-akpọ Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Enweghị taabụ na Audio ugbu a"
+    },
+    "reset": {
+        "message": "nzere"
+    },
+    "light": {
+        "message": "kemfe"
+    },
+    "volume": {
+        "message": "Ibu"
+    },
+    "notice": {
+        "message": "Biko mee ka windo a meghee ụda gị.Nke a bụ n'ihi ihe nchọgharị site na ihe nchọgharị ahụ."
+    }
+}

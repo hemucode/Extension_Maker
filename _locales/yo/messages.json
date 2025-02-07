@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Ṣe agbara Ohun didun lori ẹrọ aṣawakiri rẹ!Mu iwọn didun pọ si ipele ati ṣakoso taabu eyikeyi."
+    },
+    "app_name": {
+        "message": "Volume Booster - Mu ohun pọ si"
+    },
+    "active_tabs": {
+        "message": "Awọn taabu lọwọ ṣiṣẹ Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Ko si awọn taabu pẹlu ohun iṣẹ ni bayi"
+    },
+    "reset": {
+        "message": "Tun"
+    },
+    "light": {
+        "message": "imọlẹ"
+    },
+    "dark": {
+        "message": "dudu"
+    },
+    "volume": {
+        "message": "Iwọn didun"
+    },
+    "notice": {
+        "message": "Jọwọ tọju window yii ṣii lati ṣe igbelaruge ohun rẹ.Eyi jẹ nitori ibeere ibeere nipasẹ aṣawakiri naa."
+    }
+}

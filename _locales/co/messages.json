@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Unleash u putere di u sonu nantu à u vostru navigatore!Aumentà u voluminu à u nivellu massimu è cuntrullà a so tabulazione."
+    },
+    "app_name": {
+        "message": "Volume Booster - Aumentà u sonu"
+    },
+    "active_tabs": {
+        "message": "Tabulazioni Active chì ghjucanu Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Ùn ci hè micca tabulazione cù audio avà"
+    },
+    "light": {
+        "message": "Luce"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Per piacè guardate sta finestra aperta per prumove u vostru sonu.Questu hè dovutu à u requisitu di privacy da u navigatore."
+    }
+}

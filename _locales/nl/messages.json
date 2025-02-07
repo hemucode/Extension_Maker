@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Ontketen de kracht van geluid op je browser!Verhoog het volume tot maximale niveau en controleer de IT van elk tabblad."
+    },
+    "app_name": {
+        "message": "Volume Booster - Verhoog geluid"
+    },
+    "active_tabs": {
+        "message": "Actieve tabbladen spelen audio:"
+    },
+    "deactive_tabs": {
+        "message": "Er zijn nu geen tabbladen met audio"
+    },
+    "light": {
+        "message": "licht"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Houd dit venster open om uw geluid te stimuleren.Dit is te wijten aan de privacyvereiste door de browser."
+    }
+}

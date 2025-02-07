@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Uniona cumhachd fuaim air do bhrobhsair!Meudaich leabhar a rèir ìre Max agus smachd a chumail air taba sam bith."
+    },
+    "app_name": {
+        "message": "Volume Booster - Meudaich fuaim"
+    },
+    "active_tabs": {
+        "message": "Tabs gnìomhach a 'cluich claisneachd:"
+    },
+    "deactive_tabs": {
+        "message": "Chan eil tabaichean ann le claisneachd an-dràsta"
+    },
+    "light": {
+        "message": "Solas"
+    },
+    "volume": {
+        "message": "Tomhas-lìonaidh"
+    },
+    "notice": {
+        "message": "Feuch an cùm thu an uinneag seo fosgailte gus do fhuaim a bhrosnachadh.Tha seo mar thoradh air an riatanas prìobhaideachd leis a 'bhrobhsair."
+    }
+}

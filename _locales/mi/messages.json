@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Whakakorehia te mana o te tangi i runga i to huringa!Whakanuihia te rōrahi ki te taumata max me te whakahaere i te reira i tetahi ripa."
+    },
+    "app_name": {
+        "message": "Volume Booster - Whakanuia te tangi"
+    },
+    "active_tabs": {
+        "message": "Ripa kaha e takaro ana i te oro:"
+    },
+    "deactive_tabs": {
+        "message": "Kaore he ripa me te oro inaianei"
+    },
+    "volume": {
+        "message": "Pukapuka"
+    },
+    "notice": {
+        "message": "Tena koa kia tuwhera tenei matapihi ki te whakanui i to tangi.Ko tenei na te mea tika mo te tirotirohere a te kaitirotiro."
+    }
+}

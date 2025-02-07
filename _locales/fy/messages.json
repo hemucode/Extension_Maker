@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "UNLOEP DE KRACHT FAN SIND OP JOU BROWSER!Fergrutsje folume nei maksimaal nivo en kontrolearje it it fan elke ljepper."
+    },
+    "app_name": {
+        "message": "Volume Booster - Sound ferheegje"
+    },
+    "active_tabs": {
+        "message": "Aktive ljeppers dy't audio spielje:"
+    },
+    "deactive_tabs": {
+        "message": "D'r binne no gjin ljeppers mei Audio"
+    },
+    "volume": {
+        "message": "Folume"
+    },
+    "notice": {
+        "message": "Hâld dit finster asjebleaft iepen om jo lûd te ferheegjen.Dit komt troch privacy-eask troch de browser."
+    }
+}

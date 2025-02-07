@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Brauzeringizda ovozning kuchini oching!Ovoz balandligini oshiring va uni har qanday yorliqni boshqaring."
+    },
+    "app_name": {
+        "message": "Volume Booster - Ovozni oshiring"
+    },
+    "active_tabs": {
+        "message": "AUDIO spektakli faol yorliqlar:"
+    },
+    "deactive_tabs": {
+        "message": "Hozir audio bilan yorliqlar yo'q"
+    },
+    "volume": {
+        "message": "Hajmi"
+    },
+    "notice": {
+        "message": "Iltimos, ushbu oynani baland ovozingizni ko'taring.Bu brauzer tomonidan maxfiylik talabi tufayli."
+    }
+}

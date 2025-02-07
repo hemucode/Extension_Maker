@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Tarayıcınızdaki sesin gücünü serbest bırakın!Ses seviyesini maksimum seviyeye çıkarın ve herhangi bir sekmenin IT'yi kontrol edin."
+    },
+    "app_name": {
+        "message": "Volume Booster - Sesi Artırmak"
+    },
+    "active_tabs": {
+        "message": "Active sekmeleri ses çalma:"
+    },
+    "deactive_tabs": {
+        "message": "Şu anda sesli sekme yok"
+    },
+    "light": {
+        "message": "ışık"
+    },
+    "volume": {
+        "message": "Hacim"
+    },
+    "notice": {
+        "message": "Sesinizi artırmak için lütfen bu pencereyi açık tutun.Bunun nedeni tarayıcı tarafından gizlilik gereksinimidir."
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Oslobodite snagu zvuka na vašem pretraživaču!Povećajte zapreminu na maksimalnu razinu i kontrolirajte ga bilo koje tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Povećati zvuk"
+    },
+    "active_tabs": {
+        "message": "Aktivne kartice Reprodukujte zvuk:"
+    },
+    "deactive_tabs": {
+        "message": "Trenutno nema kartica sa audio"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "dark": {
+        "message": "mrak"
+    },
+    "volume": {
+        "message": "Zapremina"
+    },
+    "notice": {
+        "message": "Molimo vas da ovaj prozor otvorite da pojača zvuk.To je zbog zahtjeva privatnosti od strane pregledača."
+    }
+}

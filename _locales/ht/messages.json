@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Debouche pouvwa a nan son sou navigatè ou a!Ogmante volim nan nivo max ak kontwole li nan nenpòt ki tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Ogmante son"
+    },
+    "active_tabs": {
+        "message": "Onglè aktif jwe odyo:"
+    },
+    "deactive_tabs": {
+        "message": "Pa gen okenn onglè ak odyo kounye a"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "leje"
+    },
+    "dark": {
+        "message": "sonm"
+    },
+    "volume": {
+        "message": "Volim"
+    },
+    "notice": {
+        "message": "Tanpri kenbe fenèt sa a louvri pou ranfòse son ou.Sa a se akòz kondisyon vi prive pa navigatè a."
+    }
+}

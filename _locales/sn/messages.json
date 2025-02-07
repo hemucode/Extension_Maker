@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Sunungura simba rekunaka pane yako browser!Wedzera vhoriyamu kune max level uye kudzora iyo yetabhi chero."
+    },
+    "app_name": {
+        "message": "Volume Booster - Kuwedzera ruzha"
+    },
+    "active_tabs": {
+        "message": "Anoshanda tabs achitamba audio:"
+    },
+    "deactive_tabs": {
+        "message": "Iko hakuna matabhu ane Audio izvozvi"
+    },
+    "popup": {
+        "message": "buda"
+    },
+    "reset": {
+        "message": "reset"
+    },
+    "dark": {
+        "message": "rima"
+    },
+    "volume": {
+        "message": "Vhoriyamu"
+    },
+    "notice": {
+        "message": "Ndapota chengetedza hwindo iri pachena kuti uwedzere kurira kwako.Izvi zvinokonzerwa nekuvanzika zvinodiwa nebrowser."
+    }
+}

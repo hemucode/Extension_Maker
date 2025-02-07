@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Tsegulani mphamvu ya mawu anu osatsegula!Kuchulukitsa kuchuluka kwa max ndi kuwongolera ndi tabu iliyonse."
+    },
+    "app_name": {
+        "message": "Volume Booster - Onjezani mawu"
+    },
+    "active_tabs": {
+        "message": "Ma tabu ogwira madio:"
+    },
+    "deactive_tabs": {
+        "message": "Palibe ma tabu okhala ndi audio pompano"
+    },
+    "reset": {
+        "message": "bweza"
+    },
+    "volume": {
+        "message": "Phokoso"
+    },
+    "notice": {
+        "message": "Chonde pangani zenera ili lotseguka kuti muwonjezere mawu anu.Izi ndi chifukwa cha kusasangalala ndi msakatuli."
+    }
+}

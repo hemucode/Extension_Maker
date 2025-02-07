@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Tatala le mana o le leo i lau browser!Faateleina le VAIM e sili atu le maualuga ma pulea le a o soo se tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Faateleina leo"
+    },
+    "active_tabs": {
+        "message": "Galue Tabs taalo Audio:"
+    },
+    "deactive_tabs": {
+        "message": "E leai ni fusi ma leo i le taimi nei"
+    },
+    "volume": {
+        "message": "Fua"
+    },
+    "notice": {
+        "message": "Faʻamolemole taofi le faʻamalama o loʻo tatala ai lou leo.O lenei ua tatau ona i le tulaga le saʻo e ala i le browser."
+    }
+}

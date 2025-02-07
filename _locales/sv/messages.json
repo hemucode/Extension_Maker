@@ -1,0 +1,29 @@
+{
+    "app_description": {
+        "message": "Släpp loss kraften i ljudet i din webbläsare!Öka volymen till maxnivå och kontrollera IT på vilken flik som helst."
+    },
+    "app_name": {
+        "message": "Volume Booster - Öka ljudet"
+    },
+    "active_tabs": {
+        "message": "Aktiva flikar som spelar ljud:"
+    },
+    "deactive_tabs": {
+        "message": "Det finns inga flikar med ljud just nu"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "ljus"
+    },
+    "dark": {
+        "message": "mörk"
+    },
+    "volume": {
+        "message": "Volym"
+    },
+    "notice": {
+        "message": "Håll detta fönster öppet för att öka ditt ljud.Detta beror på sekretesskravet från webbläsaren."
+    }
+}

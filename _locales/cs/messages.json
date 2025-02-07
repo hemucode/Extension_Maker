@@ -1,0 +1,23 @@
+{
+    "app_description": {
+        "message": "Uvolněte sílu zvuku ve vašem prohlížeči!Zvyšte objem na maximální úroveň a ovládejte IT na jakékoli kartě."
+    },
+    "app_name": {
+        "message": "Volume Booster - Zvýšit zvuk"
+    },
+    "active_tabs": {
+        "message": "Aktivní karty přehrávání zvuku:"
+    },
+    "deactive_tabs": {
+        "message": "Právě teď neexistují žádné karty se zvukem"
+    },
+    "dark": {
+        "message": "tma"
+    },
+    "volume": {
+        "message": "Objem"
+    },
+    "notice": {
+        "message": "Udržujte toto okno otevřené, abyste zvýšili svůj zvuk.Je to kvůli požadavku na ochranu osobních údajů prohlížečem."
+    }
+}

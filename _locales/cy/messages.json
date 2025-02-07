@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Rhyddhewch bŵer sain ar eich porwr!Cynyddu cyfaint i'r lefel uchaf a rheolwch ef unrhyw dab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Cynyddu sain"
+    },
+    "active_tabs": {
+        "message": "Tabiau gweithredol yn chwarae sain:"
+    },
+    "deactive_tabs": {
+        "message": "Nid oes unrhyw dabiau gyda sain ar hyn o bryd"
+    },
+    "volume": {
+        "message": "Nghyfrol"
+    },
+    "notice": {
+        "message": "Cadwch y ffenestr hon ar agor i roi hwb i'ch sain.Mae hyn oherwydd gofyniad preifatrwydd gan y porwr."
+    }
+}

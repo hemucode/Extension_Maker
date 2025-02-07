@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Hapus kakawasaan sora dina panyungsi anjeun!Ningkat volume ka tingkat maksimal sareng ngontrol éta tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Ningkatkeun sora"
+    },
+    "active_tabs": {
+        "message": "Tab aktif maén Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Henteu aya tab sareng audio ayeuna"
+    },
+    "popup": {
+        "message": "bijil"
+    },
+    "dark": {
+        "message": "poek"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Punten jaga jandéla ieu kabuka pikeun naekeun sora anjeun.Hal ieu kusabab sarat privasi ku browser."
+    }
+}

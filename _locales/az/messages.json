@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Brauzerinizdəki səs gücünü ortaya qoyun!Maksimum səviyyəyə qədər həcmi artırın və hər hansı bir sekmedən idarə edin."
+    },
+    "app_name": {
+        "message": "Volume Booster - Səsi artırmaq"
+    },
+    "active_tabs": {
+        "message": "Active Nişanlar Audio oynayır:"
+    },
+    "deactive_tabs": {
+        "message": "Hazırda səsli nişanlar yoxdur"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "işıq"
+    },
+    "volume": {
+        "message": "Həcm"
+    },
+    "notice": {
+        "message": "Xahiş edirəm səsinizi artırmaq üçün bu pəncərəni açıq saxlayın.Bu, brauzer tərəfindən gizlilik tələbi ilə əlaqədardır."
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Giải phóng sức mạnh của âm thanh trên trình duyệt của bạn!Tăng khối lượng lên mức tối đa và kiểm soát nó của bất kỳ tab nào."
+    },
+    "app_name": {
+        "message": "Volume Booster - Tăng âm thanh"
+    },
+    "active_tabs": {
+        "message": "Các tab hoạt động phát âm thanh:"
+    },
+    "deactive_tabs": {
+        "message": "Không có tab nào có âm thanh ngay bây giờ"
+    },
+    "volume": {
+        "message": "Âm lượng"
+    },
+    "notice": {
+        "message": "Vui lòng giữ cho cửa sổ này mở để tăng âm thanh của bạn.Điều này là do yêu cầu quyền riêng tư của trình duyệt."
+    }
+}

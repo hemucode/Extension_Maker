@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Susa amandla evakala kwisikhangeli sakho!Yongeza ivolumu ukuya kwinqanaba le-max kunye nokulawula kwayo nayiphi na ithebhu."
+    },
+    "app_name": {
+        "message": "Volume Booster - Yongeza isandi"
+    },
+    "active_tabs": {
+        "message": "Iithebhu ezisebenzayo ezidlalela iaudio:"
+    },
+    "deactive_tabs": {
+        "message": "Akukho thebhu ngeaudiyo ngoku"
+    },
+    "volume": {
+        "message": "Ivolumu"
+    },
+    "notice": {
+        "message": "Nceda ugcine le festile ivulekile ukukhulisa isandi sakho.Oku kungenxa yemfuno yabucala ngesikhangeli."
+    }
+}

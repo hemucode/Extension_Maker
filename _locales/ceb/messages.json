@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Ipadayag ang gahum sa tunog sa imong browser!Dugangi ang gidaghanon sa max nga lebel ug pagkontrol sa kini sa bisan unsang tab."
+    },
+    "app_name": {
+        "message": "Volume Booster - Pagdugang nga tunog"
+    },
+    "active_tabs": {
+        "message": "Aktibo nga Tabs nga nagdula audio:"
+    },
+    "deactive_tabs": {
+        "message": "Wala'y mga tab nga adunay audio karon"
+    },
+    "popup": {
+        "message": "lumad"
+    },
+    "light": {
+        "message": "gaan"
+    },
+    "volume": {
+        "message": "Libro"
+    },
+    "notice": {
+        "message": "Palihug ipadayon ang kini nga bintana aron mapalambo ang imong tunog.Tungod kini sa kinahanglanon sa pagkapribado sa browser."
+    }
+}

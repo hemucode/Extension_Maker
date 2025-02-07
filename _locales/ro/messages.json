@@ -1,0 +1,20 @@
+{
+    "app_description": {
+        "message": "Dezlănțuie puterea sunetului pe browserul tău!Creșteți volumul până la nivelul maxim și controlați -l pe orice filă."
+    },
+    "app_name": {
+        "message": "Volume Booster - Crește sunetul"
+    },
+    "active_tabs": {
+        "message": "File active care redă audio:"
+    },
+    "deactive_tabs": {
+        "message": "Nu există file cu audio chiar acum"
+    },
+    "volume": {
+        "message": "Volum"
+    },
+    "notice": {
+        "message": "Vă rugăm să păstrați această fereastră deschisă pentru a vă spori sunetul.Acest lucru se datorează cerinței de confidențialitate de către browser."
+    }
+}

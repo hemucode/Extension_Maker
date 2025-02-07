@@ -1,0 +1,26 @@
+{
+    "app_description": {
+        "message": "Lepaskan kekuatan suara di browser Anda!Tingkatkan volume ke level maksimal dan kendalikan itu dari tab apa pun."
+    },
+    "app_name": {
+        "message": "Volume Booster - Meningkatkan suara"
+    },
+    "active_tabs": {
+        "message": "Tab Aktif Bermain Audio:"
+    },
+    "deactive_tabs": {
+        "message": "Tidak ada tab dengan audio sekarang"
+    },
+    "popup": {
+        "message": "popup"
+    },
+    "light": {
+        "message": "lampu"
+    },
+    "volume": {
+        "message": "Volume"
+    },
+    "notice": {
+        "message": "Harap tetap buka jendela ini untuk meningkatkan suara Anda.Ini karena persyaratan privasi oleh browser."
+    }
+}
