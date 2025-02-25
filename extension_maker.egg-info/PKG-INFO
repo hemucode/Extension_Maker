@@ -1,0 +1,45 @@
+Metadata-Version: 2.2
+Name: extension-maker
+Version: 1.0.3
+Summary: Easily create browser extensions/add-ons for browsers like Chrome, Firefox, or Edge.
+Home-page: https://github.com/hemucode/extension-maker
+Author: Hemanta Gayen
+Author-email: hemantagayen999@gamil.com
+License: MIT
+Project-URL: Source Code, https://github.com/hemucode/extension-maker
+Project-URL: Bug Tracker, https://github.com/hemucode/extension-maker/issues
+Project-URL: Changelog, https://github.com/hemucode/extension-maker/blob/master/CHANGELOG.md
+Keywords: gui,executable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tk>=0.1.0
+Requires-Dist: image>=1.5.33
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+

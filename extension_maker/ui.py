@@ -5,13 +5,13 @@ from PIL import Image, ImageTk
 from tkinter.constants import W
 from tkinter import ttk
 
-import json,os,requests,time
+import json,os,requests,random
+from . import config, maker
 
 
 root = tk.Tk() 
-root.title("Extension Maker")
-root.wm_iconbitmap('logo.ico')
-root.geometry("1200x800") 
+root.title(config.APP_NAME)
+root.geometry(config.APP_SIZE) 
 
 name_var=tk.StringVar()
 short_name_var = tk.StringVar()
@@ -21,37 +21,28 @@ manifest_version_var=tk.StringVar()
 manifest_version_var.set("3") 
 
 
-
-
-EXTENSION_NAME_MAX_LENGTH = 75
-EXTENSION_DESCRIPTION_MAX_LENGTH = 132
-EXTENSION_SHORT_NAME_MAX_LENGTH = 12 
-MANIFEST_VERSION_LIST = ["2","3"]
-
-BROWSER_MANIFEST_VERSION_3_PERMISSIONS = ["tabs","tabCapture","activeTab","storage","contextMenus","alarms","audio","background","bookmarks","browsingData","clipboardRead","clipboardWrite","contentSettings","cookies","debugger","declarativeContent","declarativeNetRequest","declarativeNetRequestFeedback","declarativeContent","desktopCapture","dns","documentScan","downloads","downloads.open","enterprise.deviceAttributes","enterprise.platformKeys","fileBrowserHandler","favicon","fontSettings","gcm","geolocation","identity","idle","identity.email","loginState","management","nativeMessaging","offscreen","pageCapture","platformKeys","power","printerProvider","privacy","processes","proxy","scripting","search","sessions","signedInDevices","storage","system.cpu","system.display","system.memory","system.storage","tabHide","topSites","tts","ttsEngine","unlimitedStorage","vpnProvider","wallpaper","webAccessibleResources","webNavigation","webRequest","webRequestBlocking","webstore","windows","system.display","system.memory","system.storage","tabHide","topSites","tts","ttsEngine","unlimitedStorage","vpnProvider","wallpaper","webAccessibleResources","webNavigation","webRequest","webRequestBlocking"]
-
-MANIFEST_HOST_PERMISSIONS = ["<all_urls>", "*://*/*","*://youtube.com/*","*://google.com/*"]
-
-CREATE_EXTENSION_FILE = ["background", "content", "interface", "options"]
-
-
 def get_permissions(manifest_version):
-    return BROWSER_MANIFEST_VERSION_3_PERMISSIONS
+    return config.BROWSER_MANIFEST_VERSION_3_PERMISSIONS
 
 def set_result_text(text):
+    global random_number
     old_text = result_text.get("1.0", tk.END)
-    new_text = old_text + text
+    new_text = old_text + str(random_number)+": "+ text
+    random_number = random_number+1
     result_text.insert(tk.END, new_text)
     result_text.see(tk.END)
 
-
+random_number = random.randint(1001, 5005) 
 def downloadFile(url, path):
     get_response = requests.get(url,stream=True)
-    file_name  = url.split("/")[-1]
-    with open(path + file_name, 'wb') as f:
-        for chunk in get_response.iter_content(chunk_size=1024):
-            if chunk: # filter out keep-alive new chunks
-                f.write(chunk)
+    if get_response.status_code == 200:
+        file_name  = url.split("/")[-1]
+        with open(path + file_name, 'wb') as f:
+            for chunk in get_response.iter_content(chunk_size=1024):
+                if chunk: # filter out keep-alive new chunks
+                    f.write(chunk)
+
+             
                 
 
 def is_valid_version(version_str):
@@ -70,14 +61,14 @@ name_label = tk.Label(root, text = '[*] Extension Name: ', font=('calibre',10, '
 name_label.grid(row=0, column=0, sticky = W, padx=10, pady=3)
 
 def callback_name_massage(*args):
-    if len(name_var.get()) > EXTENSION_NAME_MAX_LENGTH:
+    if len(name_var.get()) > config.EXTENSION_NAME_MAX_LENGTH:
         name_massage.config(text="Extension Name is too long")
         name_massage.config(fg="red")
     elif len(name_var.get()) == 0:
         name_massage.config(text="Extension Name is required")
         name_massage.config(fg="red")        
     else:
-        name_massage.config(text=" ["+str(EXTENSION_NAME_MAX_LENGTH - len(name_var.get()))+"] (maximum of "+str(EXTENSION_NAME_MAX_LENGTH)+" characters)")
+        name_massage.config(text=" ["+str(config.EXTENSION_NAME_MAX_LENGTH - len(name_var.get()))+"] (maximum of "+str(config.EXTENSION_NAME_MAX_LENGTH)+" characters)")
         name_massage.config(fg="green")
 
 name_var.trace_add("write", callback_name_massage)
@@ -85,21 +76,21 @@ name_var.trace_add("write", callback_name_massage)
 name_entry = tk.Entry(root, textvariable = name_var, font=('calibre',10,'normal'), width=50)
 name_entry.grid(row=0,column=1, sticky = W, pady=3, columnspan=2)
 
-name_massage = tk.Label(root, text = " (maximum of "+str(EXTENSION_NAME_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
+name_massage = tk.Label(root, text = " (maximum of "+str(config.EXTENSION_NAME_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
 name_massage.grid(row=0, column=2, pady=3 )
 
 short_name_label = tk.Label(root, text = '[?] Short Name: ', font=('calibre',10, 'bold'))
 short_name_label.grid(row=1, column=0, sticky = W, padx=10, pady=3)
 
 def callback_short_name_massage(*args):
-    if len(short_name_var.get()) > EXTENSION_SHORT_NAME_MAX_LENGTH:
+    if len(short_name_var.get()) > config.EXTENSION_SHORT_NAME_MAX_LENGTH:
         short_name_massage.config(text="Short Name is too long")
         short_name_massage.config(fg="red")
     elif len(short_name_var.get()) == 0:
         short_name_massage.config(text="Short Name is required")
         short_name_massage.config(fg="red")    
     else:
-        short_name_massage.config(text=" ["+str(EXTENSION_SHORT_NAME_MAX_LENGTH - len(short_name_var.get()))+"] (maximum of "+str(EXTENSION_SHORT_NAME_MAX_LENGTH)+" characters)")
+        short_name_massage.config(text=" ["+str(config.EXTENSION_SHORT_NAME_MAX_LENGTH - len(short_name_var.get()))+"] (maximum of "+str(config.EXTENSION_SHORT_NAME_MAX_LENGTH)+" characters)")
         short_name_massage.config(fg="green")
 
 short_name_var.trace_add("write", callback_short_name_massage)        
@@ -107,21 +98,21 @@ short_name_var.trace_add("write", callback_short_name_massage)
 short_name_entry = tk.Entry(root, textvariable = short_name_var, font=('calibre',10,'normal'), width=50)
 short_name_entry.grid(row=1,column=1, sticky = W, pady=3)
 
-short_name_massage = tk.Label(root, text = " (maximum of "+str(EXTENSION_SHORT_NAME_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
+short_name_massage = tk.Label(root, text = " (maximum of "+str(config.EXTENSION_SHORT_NAME_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
 short_name_massage.grid(row=1, column=2, pady=3 )
 
 des_label = tk.Label(root, text = '[*] Extension description: ', font=('calibre',10, 'bold'))
 des_label.grid(row=2,column=0, sticky = W, padx=10, pady=3)
 
 def callback_des_massage(*args):
-    if len(des_entry.get("1.0", tk.END)) > EXTENSION_DESCRIPTION_MAX_LENGTH:
+    if len(des_entry.get("1.0", tk.END)) > config.EXTENSION_DESCRIPTION_MAX_LENGTH:
         des_massage.config(text="Extension description is too long")
         des_massage.config(fg="red")
     if len(des_entry.get("1.0", tk.END)) == 0:
         des_massage.config(text="Extension description is required")
         des_massage.config(fg="red")    
     else:
-        des_massage.config(text=" ["+str(EXTENSION_DESCRIPTION_MAX_LENGTH - len(des_entry.get("1.0", tk.END)))+"] (maximum of "+str(EXTENSION_DESCRIPTION_MAX_LENGTH)+" characters)")
+        des_massage.config(text=" ["+str(config.EXTENSION_DESCRIPTION_MAX_LENGTH - len(des_entry.get("1.0", tk.END)))+"] (maximum of "+str(config.EXTENSION_DESCRIPTION_MAX_LENGTH)+" characters)")
         des_massage.config(fg="green")
 
 des_var.trace_add("write", callback_des_massage)
@@ -130,7 +121,7 @@ des_entry = tk.Text(root, font=('calibre',10,'normal'), width=50,  height=3, wra
 des_entry.bind("<Key>", callback_des_massage)
 des_entry.grid(row=2,column=1, sticky = W, pady=3, columnspan=2)
 
-des_massage = tk.Label(root, text = " (maximum of "+str(EXTENSION_DESCRIPTION_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
+des_massage = tk.Label(root, text = " (maximum of "+str(config.EXTENSION_DESCRIPTION_MAX_LENGTH)+" characters)", font=('calibre',10, 'bold'), fg="blue")
 des_massage.grid(row=2, column=2, pady=3 )
 
 
@@ -158,7 +149,7 @@ manifest_version_label.grid(row=4, column=0, sticky = W, padx=10, pady=15)
 
 
 
-manifest_version_menu = tk.OptionMenu(root, manifest_version_var, *MANIFEST_VERSION_LIST)
+manifest_version_menu = tk.OptionMenu(root, manifest_version_var, *config.MANIFEST_VERSION_LIST)
 manifest_version_menu.grid(row=4, column=1, sticky = W, pady=15)
 
 manifest_permission_label = tk.Label(root, text = '[?] Manifest permissions: ', font=('calibre',10, 'bold'))
@@ -178,7 +169,7 @@ manifest_permission_list.grid(row=6, column=0, sticky = W, pady=3, padx=25)
 
 manifest_permission_list.bind("<<ListboxSelect>>", get_selected_permission)
 
-for permission in BROWSER_MANIFEST_VERSION_3_PERMISSIONS:
+for permission in config.BROWSER_MANIFEST_VERSION_3_PERMISSIONS:
     manifest_permission_list.insert(tk.END, permission)
 
 
@@ -198,8 +189,7 @@ def collback_image_upload():
         image_label.config(text=file_path)
         print(file_path)
 
-        
-
+    
 
 image_button = tk.Button(root, text = "Select Logo", font=('calibre',10, 'bold'), command=collback_image_upload)
 image_button.grid(row=0, column=3, pady=3, padx=60,rowspan=2)
@@ -209,12 +199,8 @@ image_label.config(image=None)
 image_label.grid(row=1, column=3, rowspan=4)
 
 
-
 host_permission_label = tk.Label(root, text = '[?] Host permissions: ', font=('calibre',10, 'bold'))
 host_permission_label.grid(row=5, column=2, sticky = W, padx=10, pady=3)
-
-
-
 
 
 def get_selected_host_permission(event):
@@ -233,7 +219,7 @@ host_permission_list.grid(row=6, column=2, sticky = W, pady=3, padx=25)
 
 host_permission_list.bind("<<ListboxSelect>>", get_selected_host_permission)
 
-for permission in MANIFEST_HOST_PERMISSIONS:
+for permission in config.MANIFEST_HOST_PERMISSIONS:
     host_permission_list.insert(tk.END, permission)
 
 host_permission_massage = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=10, width=45)
@@ -248,77 +234,34 @@ def get_selected_file_list(event):
     object_format = {}
     for i in selected_file:
         if file_list.get(i) =="background":
-            if manifest_version_var.get()=="3":
-                object_format["background"] = {
-                    "service_worker": "background.js"
-                }
-            elif manifest_version_var.get()=="2":
-                object_format["background"] = {
-                    "scripts": ["background.js"]
-                }
+            object_format["background"] = config.MANIFEST[manifest_version_var.get()]["background"]
+
         if file_list.get(i) =="content":
-            if manifest_version_var.get()=="3":
-                object_format["content_scripts"] = [
-                    {
-                        "matches": ["<all_urls>"],
-                        "js": ["content-script.js"],
-                        "run_at": "document_start",
-                        "all_frames": True
-                    }
-                ]
-            elif manifest_version_var.get()=="2":
-                object_format["content_scripts"] = [
-                    {
-                        "matches": ["<all_urls>"],
-                        "js": ["content-script.js"],
-                        "run_at": "document_start",
-                    }
-                ]
+            object_format["content_scripts"] = config.MANIFEST[manifest_version_var.get()]["content_scripts"]
+
         if file_list.get(i) =="interface":
             if manifest_version_var.get()=="3":
-                object_format["action"] = {
-                    "default_icon": {
-                        "128": "data/icons/128.png", 
-                        "64": "data/icons/64.png", 
-                        "48": "data/icons/48.png", 
-                        "32": "data/icons/32.png"
-                        },
-                    "default_popup": "data/interface/popup.html",
-                    "default_title": "__MSG_app_name__"
-                }
+                object_format["action"] = config.MANIFEST[manifest_version_var.get()]["action"]
             elif manifest_version_var.get()=="2":
-                object_format["browser_action"] = {
-                    "default_icon": {
-                        "128": "data/icons/128.png", 
-                        "64": "data/icons/64.png", 
-                        "48": "data/icons/48.png", 
-                        "32": "data/icons/32.png"
-                        },
-                    "default_popup": "data/interface/popup.html",
-                    "default_title": "__MSG_app_name__"
-                }
+                object_format["browser_action"] = config.MANIFEST[manifest_version_var.get()]["browser_action"]
+
         if file_list.get(i) =="options":
             if manifest_version_var.get()=="3":
-                object_format["options_ui"] = {
-                    "page": "data/options/options.html",
-                    "chrome_style": True
-                }
+                object_format["options_ui"] = config.MANIFEST[manifest_version_var.get()]["options_ui"]
             elif manifest_version_var.get()=="2":
-                object_format["options_page"] = "data/options/options.html"    
+                object_format["options_page"] = config.MANIFEST[manifest_version_var.get()]["options_page"]
 
     selected_items_list_Format = json.dumps(object_format, indent=4)
     file_list_massage.delete('1.0', tk.END)
     file_list_massage.insert(tk.END, str(selected_items_list_Format))            
                                        
 
-
-
 file_list = tk.Listbox(root, selectmode=tk.MULTIPLE, width=20, font=('calibre',10,'normal'), exportselection=False)
 file_list.grid(row=8, column=0, sticky = W, pady=3, padx=25)
 
 file_list.bind("<<ListboxSelect>>", get_selected_file_list)
 
-for file in CREATE_EXTENSION_FILE:
+for file in config.CREATE_EXTENSION_FILE:
     file_list.insert(tk.END, file)
 
 file_list_massage = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=10, width=45)
@@ -327,28 +270,15 @@ file_list_massage.grid(row=8, column=1, pady=3)
 libery_label = tk.Label(root, text = '[?] Download a library', font=('calibre',10, 'bold'))
 libery_label.grid(row=7, column=2, sticky = W, padx=10, pady=10, columnspan=2)
 
-libery_file = "libery.json"
-
-if not os.path.exists(libery_file):
-    LIBERY_DATA = ""
-    set_result_text("Error: Extension Folder Not Exist! "+libery_file)
-else:
-    with open(libery_file) as DATA:
-        LIBERY_DATA = json.load(DATA)
-
-if LIBERY_DATA != "":
-    LIBERY_KEY = []
-    for key in LIBERY_DATA.keys():
-       LIBERY_KEY.append(key)
-else:
-    LIBERY_KEY = []      
-        
+LIBERY_KEY = []
+for key in config.LIBERY.keys():
+       LIBERY_KEY.append(key) 
 
 def get_selected_libery_list(event):
     selected_libery = libery_list.curselection()
     object_format = {}
     for i in selected_libery:
-        object_format[libery_list.get(i)] = LIBERY_DATA[libery_list.get(i)]   
+        object_format[libery_list.get(i)] = config.LIBERY[libery_list.get(i)]   
     selected_items_list_Format = json.dumps(object_format, indent=4)
     libery_list_massage.delete('1.0', tk.END)
     libery_list_massage.insert(tk.END, str(selected_items_list_Format))
@@ -369,8 +299,11 @@ def OpenFolder(name):
     if not os.path.exists(name):
         set_result_text("Error: Extension Folder Not Exist! "+name)
     else:
+        generate_progress['value'] = 100
+        generate_progress.update()
         path = os.path.realpath(name)
         os.startfile(path)  
+        
 
 result_text = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=6, width=70)
 result_text.delete('1.0', tk.END)
@@ -413,17 +346,47 @@ def htmlPackageCreate(file_path, file_name):
             outfile.write("/* "+file_name+" file created */")
             set_result_text(file_name+".css file created successfully") 
 
+def htmlPackageCreate2(file_path, file_name):
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+        set_result_text("Interface folder created successfully")
+    else:
+        set_result_text("Interface folder already exists")
+
+    with open(file_path+"/"+file_name+".html", 'w') as outfile:
+        popup_html = """
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popup</title>
+        <link rel="stylesheet" type="text/css" href='"""+file_name+""".css'>
+    </head>
+    <body>
+    </body>
+    <script src='"""+file_name+""".js'></script>
+</html>
+            """
+        outfile.write(popup_html)
+        set_result_text(file_name+".html file created successfully")
+
+        with open(file_path+"/"+file_name+".js", 'w') as outfile:
+            outfile.write("// "+file_name+".js file created")
+            set_result_text(file_name+".js file created successfully")
+
+        with open(file_path+"/"+file_name+".css", 'w') as outfile:
+            outfile.write("/* "+file_name+" file created */")
+            set_result_text(file_name+".css file created successfully")             
+
 
 def create_extension():
-    print(str(manifest_permission_list.curselection()))
-    print(str(host_permission_list.curselection()))
+    massages_json = {}
     generate_progress['value'] = 0
     generate_progress.update()
     # check all required fields
     if len(name_var.get()) == 0:
         set_result_text("Extension Name is required")
         return
-    elif len(name_var.get()) > EXTENSION_NAME_MAX_LENGTH:
+    elif len(name_var.get()) > config.EXTENSION_NAME_MAX_LENGTH:
         set_result_text("Extension Name is too long")
         return
     else:
@@ -431,10 +394,22 @@ def create_extension():
 
     generate_progress['value'] +=5   
     generate_progress.update() 
+
+    if len(version_var.get()) == 0:
+        APP_VERSION = "1.0.0"
+    else:
+        APP_VERSION = str(version_var.get())   
+
+    #create extension folder
+    extension_folder = maker.createFolder(f"V{APP_VERSION}_M{manifest_version_var.get()}",set_result_text)
+
+    generate_progress['value'] +=5 
+    generate_progress.update() 
+
     if len(short_name_var.get()) == 0:
         set_result_text("Short Name is required")
         return
-    elif len(short_name_var.get()) > EXTENSION_SHORT_NAME_MAX_LENGTH:
+    elif len(short_name_var.get()) > config.EXTENSION_SHORT_NAME_MAX_LENGTH:
         set_result_text("Short Name is too long")
         return
     else:
@@ -455,7 +430,7 @@ def create_extension():
     if len(des_entry.get("1.0", tk.END)) == 0:
         set_result_text("Extension description is required")
         return
-    elif len(des_entry.get("1.0", tk.END)) > EXTENSION_DESCRIPTION_MAX_LENGTH:
+    elif len(des_entry.get("1.0", tk.END)) > config.EXTENSION_DESCRIPTION_MAX_LENGTH:
         set_result_text("Extension description is too long")
         return
     else:
@@ -500,24 +475,6 @@ def create_extension():
     generate_progress['value'] +=5 
     generate_progress.update() 
                           
-    if len(version_var.get()) == 0:
-        APP_VERSION = "1.0.0"
-    else:
-        APP_VERSION = str(version_var.get())   
-
-
-    #create extension folder
-    extension_folder = "V"+APP_VERSION+"_M"+manifest_version_var.get()
-    if not os.path.exists(extension_folder):
-        os.makedirs(extension_folder)
-        set_result_text("Extension folder created successfully")
-    else:
-        set_result_text("Extension folder already exists")
-        return
-
-    generate_progress['value'] +=5 
-    generate_progress.update() 
-
 
     # create _locales folder and en folder and messages.json file
     locales_folder = extension_folder+"/_locales/en"
@@ -583,15 +540,8 @@ def create_extension():
                     outfile.write("// background.js file created")
                     set_result_text("Background.js file created successfully")   
 
-                if manifest_version_var.get()=="3":
-                    manifest["background"] = {
-                        "service_worker": "background.js"
-                    }
+                manifest["background"] = config.MANIFEST[manifest_version_var.get()]["background"]
 
-                elif manifest_version_var.get()=="2":
-                    manifest["background"] = {
-                        "scripts": ["background.js"]
-                    }  
    
             if file_list.get(i) =="content":
                 # create content-script.js file  
@@ -599,59 +549,24 @@ def create_extension():
                     outfile.write("// content-script.js file created")
                     set_result_text("content-script.js file created successfully")   
                 if manifest_version_var.get()=="3":
-                    manifest["content_scripts"] = [
-                        {
-                            "matches": ["<all_urls>"],
-                            "js": ["content-script.js"],
-                            "run_at": "document_start",
-                            "all_frames": True
-                        }
-                    ]
-                elif manifest_version_var.get()=="2":
-                    manifest["content_scripts"] = [
-                        {
-                            "matches": ["<all_urls>"],
-                            "js": ["content-script.js"],
-                            "run_at": "document_start",
-                        }
-                    ]
+                    manifest["content_scripts"] = config.MANIFEST[manifest_version_var.get()]["content_scripts"]
+
             if file_list.get(i) =="interface":
                 interface_folder = extension_folder+"/data/interface"
                 htmlPackageCreate(interface_folder, "popup")
 
                 if manifest_version_var.get()=="3":
-                    manifest["action"] = {
-                        "default_icon":{
-                            "128": "data/icons/128.png", 
-                            "64": "data/icons/64.png", 
-                            "48": "data/icons/48.png", 
-                            "32": "data/icons/32.png"
-                            },
-                        "default_popup": "data/interface/popup.html",
-                        "default_title": "__MSG_app_name__"
-                    }
+                    manifest["action"] = config.MANIFEST[manifest_version_var.get()]["action"]
                 elif manifest_version_var.get()=="2":
-                    manifest["browser_action"] = {
-                        "default_icon": {
-                            "128": "data/icons/128.png", 
-                            "64": "data/icons/64.png", 
-                            "48": "data/icons/48.png", 
-                            "32": "data/icons/32.png"
-                            },
-                        "default_popup": "data/interface/popup.html",
-                        "default_title": "__MSG_app_name__"
-                    }
+                    manifest["browser_action"] = config.MANIFEST[manifest_version_var.get()]["browser_action"]
             if file_list.get(i) =="options":
                 options_folder = extension_folder+"/data/options"
-                htmlPackageCreate(options_folder, "options")
+                htmlPackageCreate2(options_folder, "options")
 
                 if manifest_version_var.get()=="3":
-                    manifest["options_ui"] = {
-                        "page": "data/options/options.html",
-                        "chrome_style": True
-                    }
+                    manifest["options_ui"] = config.MANIFEST[manifest_version_var.get()]["options_ui"]
                 elif manifest_version_var.get()=="2":
-                    manifest["options_page"] = "data/options/options.html"    
+                    manifest["options_page"] = config.MANIFEST[manifest_version_var.get()]["options_page"]
 
     generate_progress['value'] +=5 
     generate_progress.update()
@@ -700,37 +615,31 @@ def create_extension():
     generate_progress.update() 
 
     if LIBERY_KEY:
-        try:
-            libery_path = extension_folder + "/lib/"
-            if not os.path.exists(libery_path):
-                os.makedirs(libery_path)
-                set_result_text("Libery folder created successfully")
-                selected_libery = libery_list.curselection()
-                for i in selected_libery:
-                    file_path = LIBERY_DATA[libery_list.get(i)]
-                    downloadFile(file_path, libery_path)
-                    time.sleep(1)
-                    set_result_text("Libery downloading..")
-                    
-            else:
-                set_result_text("Libery folder already exists")
-            
-        except:
-            set_result_text("Error: libery download")
+        libery_path = extension_folder + "/lib/"
+        if not os.path.exists(libery_path):
+            os.makedirs(libery_path)
+            set_result_text("Libery folder created successfully")
+            selected_libery = libery_list.curselection()
+            for i in selected_libery:
+                file_path = config.LIBERY[libery_list.get(i)]
+                downloadFile(file_path, libery_path)
+                set_result_text("Libery downloading..")      
+        else:
+            set_result_text("Libery folder already exists")
+
     else:
         set_result_text("Libery is not load!")       
         
 
-    generate_progress['value'] = 100
+    generate_progress['value'] = 90
     generate_progress.update()
     set_result_text("Extension created successfully")
     OpenFolder(extension_folder)
-
-
+    root.quit()
 
 generate_button = tk.Button(root, text = "Generate Extension", font=('calibre',10, 'bold'),width=30, height=2, command=create_extension)
 generate_button.grid(row=9, column=2,  padx=10, columnspan=2)
-root.mainloop()
+
 
 
 

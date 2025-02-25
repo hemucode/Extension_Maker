@@ -7,10 +7,9 @@ from extension_maker import __version__ as version
 setup(
     name="extension-maker",
     version=version,
-    url="https://github.com/hemucode/auto-py-to-exe",
+    url="https://github.com/hemucode/extension-maker",
     license="MIT",
     author="Hemanta Gayen",
-    author_email="hemantagayen999@gamil.com",
     description="Easily create browser extensions/add-ons for browsers like Chrome, Firefox, or Edge.",
     long_description="".join(open("README.md", encoding="utf-8").readlines()),
     long_description_content_type="text/markdown",
@@ -22,7 +21,7 @@ setup(
     keywords=["gui", "executable"],
     packages= find_packages(),
     include_package_data=True,
-    install_requires=["Eel>=0.11.0,!=0.18.0", "requests"],
+    install_requires=["tk>=0.1.0","image>=1.5.33","requests"],
     python_requires=">=3.6",
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -38,5 +37,8 @@ setup(
         "Programming Language :: Python :: 3.13",
         "Operating System :: Microsoft :: Windows",
         "Operating System :: POSIX :: Linux",
-    ]
+    ],
+    entry_points={
+        "console_scripts": ["extension-maker=extension_maker.__main__:run", "extensionmaker=extension_maker.__main__:run"],
+    }
 )
