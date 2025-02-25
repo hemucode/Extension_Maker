@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 from tkinter.constants import W
 from tkinter import ttk
 
-import json,os,requests,random,sys
+import json,os,requests,random
 from . import config, maker
 
 
