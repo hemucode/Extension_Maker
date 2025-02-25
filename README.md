@@ -59,13 +59,6 @@ You can run this project locally by following these steps:
 3. Execute `python -m pip install -r requirements.txt`
 4. Execute `python -m extension_maker` to run the application
 
-## Using the Application
-
-1. Select your script location (paste in or use a file explorer)
-   - The outline will become blue if the file exists
-2. Select other options and add things like an icon or other files
-3. Click the big blue button at the bottom to convert
-4. Find your converted files in /output when completed
 
 _Easy._
 
