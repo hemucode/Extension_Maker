@@ -1,0 +1,5 @@
+{
+    "jquery-3.6.0.min.js": "https://code.jquery.com/jquery-3.6.0.min.js",
+    "bootstrap.min.css": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",
+    "fontawesome": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+}

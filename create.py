@@ -5,11 +5,12 @@ from PIL import Image, ImageTk
 from tkinter.constants import W
 from tkinter import ttk
 
-import json,os
+import json,os,requests,time
 
 
 root = tk.Tk() 
-root.title("Extension Creator")
+root.title("Extension Maker")
+root.wm_iconbitmap('logo.ico')
 root.geometry("1200x800") 
 
 name_var=tk.StringVar()
@@ -18,7 +19,6 @@ des_var=tk.StringVar()
 version_var=tk.StringVar()
 manifest_version_var=tk.StringVar()
 manifest_version_var.set("3") 
-
 
 
 
@@ -38,8 +38,21 @@ CREATE_EXTENSION_FILE = ["background", "content", "interface", "options"]
 def get_permissions(manifest_version):
     return BROWSER_MANIFEST_VERSION_3_PERMISSIONS
 
+def set_result_text(text):
+    old_text = result_text.get("1.0", tk.END)
+    new_text = old_text + text
+    result_text.insert(tk.END, new_text)
+    result_text.see(tk.END)
 
 
+def downloadFile(url, path):
+    get_response = requests.get(url,stream=True)
+    file_name  = url.split("/")[-1]
+    with open(path + file_name, 'wb') as f:
+        for chunk in get_response.iter_content(chunk_size=1024):
+            if chunk: # filter out keep-alive new chunks
+                f.write(chunk)
+                
 
 def is_valid_version(version_str):
     try:
@@ -143,15 +156,9 @@ version_massage.grid(row=3, column=2,sticky = W, pady=3)
 manifest_version_label = tk.Label(root, text = '[?] Manifest Version: ', font=('calibre',10, 'bold'))
 manifest_version_label.grid(row=4, column=0, sticky = W, padx=10, pady=15)
 
-def callback_manifest_version_menu(event):
-    get_selected_file_list(event)
-    if manifest_version_var.get() == "3":
-        manifest_permission_list.delete(0, tk.END)
-        for permission in get_permissions(manifest_version_var.get()):
-            manifest_permission_list.insert(tk.END, permission)
 
 
-manifest_version_menu = tk.OptionMenu(root, manifest_version_var, *MANIFEST_VERSION_LIST, command = callback_manifest_version_menu)
+manifest_version_menu = tk.OptionMenu(root, manifest_version_var, *MANIFEST_VERSION_LIST)
 manifest_version_menu.grid(row=4, column=1, sticky = W, pady=15)
 
 manifest_permission_label = tk.Label(root, text = '[?] Manifest permissions: ', font=('calibre',10, 'bold'))
@@ -270,18 +277,23 @@ def get_selected_file_list(event):
         if file_list.get(i) =="interface":
             if manifest_version_var.get()=="3":
                 object_format["action"] = {
-                    "default_icon": [
-                        "data/icons/128.png", 
-                        "data/icons/64.png", 
-                        "data/icons/48.png", 
-                        "data/icons/32.png"
-                        ],
+                    "default_icon": {
+                        "128": "data/icons/128.png", 
+                        "64": "data/icons/64.png", 
+                        "48": "data/icons/48.png", 
+                        "32": "data/icons/32.png"
+                        },
                     "default_popup": "data/interface/popup.html",
                     "default_title": "__MSG_app_name__"
                 }
             elif manifest_version_var.get()=="2":
                 object_format["browser_action"] = {
-                    "default_icon": "data/icons/128.png",
+                    "default_icon": {
+                        "128": "data/icons/128.png", 
+                        "64": "data/icons/64.png", 
+                        "48": "data/icons/48.png", 
+                        "32": "data/icons/32.png"
+                        },
                     "default_popup": "data/interface/popup.html",
                     "default_title": "__MSG_app_name__"
                 }
@@ -312,19 +324,31 @@ for file in CREATE_EXTENSION_FILE:
 file_list_massage = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=10, width=45)
 file_list_massage.grid(row=8, column=1, pady=3)
 
-libery_label = tk.Label(root, text = '[?] Generated/Download a library', font=('calibre',10, 'bold'))
+libery_label = tk.Label(root, text = '[?] Download a library', font=('calibre',10, 'bold'))
 libery_label.grid(row=7, column=2, sticky = W, padx=10, pady=10, columnspan=2)
+
+libery_file = "libery.json"
+
+if not os.path.exists(libery_file):
+    LIBERY_DATA = ""
+    set_result_text("Error: Extension Folder Not Exist! "+libery_file)
+else:
+    with open(libery_file) as DATA:
+        LIBERY_DATA = json.load(DATA)
+
+if LIBERY_DATA != "":
+    LIBERY_KEY = []
+    for key in LIBERY_DATA.keys():
+       LIBERY_KEY.append(key)
+else:
+    LIBERY_KEY = []      
+        
 
 def get_selected_libery_list(event):
     selected_libery = libery_list.curselection()
     object_format = {}
     for i in selected_libery:
-        if libery_list.get(i) =="jquery":
-            object_format["jquery"] = "https://code.jquery.com/jquery-3.6.0.min.js"
-        if libery_list.get(i) =="bootstrap":
-            object_format["bootstrap"] = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        if libery_list.get(i) =="fontawesome":
-            object_format["fontawesome"] = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"    
+        object_format[libery_list.get(i)] = LIBERY_DATA[libery_list.get(i)]   
     selected_items_list_Format = json.dumps(object_format, indent=4)
     libery_list_massage.delete('1.0', tk.END)
     libery_list_massage.insert(tk.END, str(selected_items_list_Format))
@@ -334,28 +358,23 @@ libery_list.grid(row=8, column=2, sticky = W, pady=3, padx=25)
 
 libery_list.bind("<<ListboxSelect>>", get_selected_libery_list)
 
-for libery in ["jquery", "bootstrap", "fontawesome"]:
-    libery_list.insert(tk.END, libery)
 
 libery_list_massage = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=10, width=45, exportselection=False)
 libery_list_massage.grid(row=8, column=3, pady=3)
 
+for libery in LIBERY_KEY:
+    libery_list.insert(tk.END, libery)
 
-
-
-
-def set_result_text(text):
-    old_text = result_text.get("1.0", tk.END)
-    new_text = old_text + text
-    result_text.insert(tk.END, new_text)
-    result_text.see(tk.END)
+def OpenFolder(name):
+    if not os.path.exists(name):
+        set_result_text("Error: Extension Folder Not Exist! "+name)
+    else:
+        path = os.path.realpath(name)
+        os.startfile(path)  
 
 result_text = tk.Text(root, font=('calibre',10, 'bold'), fg="green", height=6, width=70)
 result_text.delete('1.0', tk.END)
 result_text.grid(row=9, column=0, sticky = W, padx=25, pady=10, columnspan=2)
-
-def create_extension():
-    print("")
 
 
 
@@ -494,6 +513,7 @@ def create_extension():
         set_result_text("Extension folder created successfully")
     else:
         set_result_text("Extension folder already exists")
+        return
 
     generate_progress['value'] +=5 
     generate_progress.update() 
@@ -601,18 +621,23 @@ def create_extension():
 
                 if manifest_version_var.get()=="3":
                     manifest["action"] = {
-                        "default_icon": [
-                            "data/icons/128.png", 
-                            "data/icons/64.png", 
-                            "data/icons/48.png", 
-                            "data/icons/32.png"
-                            ],
+                        "default_icon":{
+                            "128": "data/icons/128.png", 
+                            "64": "data/icons/64.png", 
+                            "48": "data/icons/48.png", 
+                            "32": "data/icons/32.png"
+                            },
                         "default_popup": "data/interface/popup.html",
                         "default_title": "__MSG_app_name__"
                     }
                 elif manifest_version_var.get()=="2":
                     manifest["browser_action"] = {
-                        "default_icon": "data/icons/128.png",
+                        "default_icon": {
+                            "128": "data/icons/128.png", 
+                            "64": "data/icons/64.png", 
+                            "48": "data/icons/48.png", 
+                            "32": "data/icons/32.png"
+                            },
                         "default_popup": "data/interface/popup.html",
                         "default_title": "__MSG_app_name__"
                     }
@@ -672,13 +697,34 @@ def create_extension():
         set_result_text("Manifest.json file created successfully")   
 
     generate_progress['value'] +=5 
-    generate_progress.update()      
+    generate_progress.update() 
 
-
+    if LIBERY_KEY:
+        try:
+            libery_path = extension_folder + "/lib/"
+            if not os.path.exists(libery_path):
+                os.makedirs(libery_path)
+                set_result_text("Libery folder created successfully")
+                selected_libery = libery_list.curselection()
+                for i in selected_libery:
+                    file_path = LIBERY_DATA[libery_list.get(i)]
+                    downloadFile(file_path, libery_path)
+                    time.sleep(1)
+                    set_result_text("Libery downloading..")
+                    
+            else:
+                set_result_text("Libery folder already exists")
+            
+        except:
+            set_result_text("Error: libery download")
+    else:
+        set_result_text("Libery is not load!")       
+        
 
     generate_progress['value'] = 100
     generate_progress.update()
     set_result_text("Extension created successfully")
+    OpenFolder(extension_folder)
 
 
 
