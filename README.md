@@ -26,14 +26,15 @@ Then to run it, windows terminal:
 ```
 C:\Users\user> python -m extension_maker
 ```
+> If you have more than one version of Python installed, you can use `python -m  extension_maker` instead of `extension_maker`.
 
 Then to run it, execute the following in the terminal:
 
 ```
-$ extension_maker
+$ extension-maker
 ```
 
-> If you have more than one version of Python installed, you can use `python -m auto_py_to_exe` instead of `extension_maker`.
+
 
 #### Installing via [GitHub](https://github.com/hemucode/extension-maker)
 
@@ -56,7 +57,7 @@ You can run this project locally by following these steps:
 1. Clone/download the [repo](https://github.com/hemucode/extension-maker)
 2. Open cmd/terminal and cd into the project's root folder
 3. Execute `python -m pip install -r requirements.txt`
-4. Execute `python -m auto_py_to_exe` to run the application
+4. Execute `python -m extension_maker` to run the application
 
 ## Using the Application
 
