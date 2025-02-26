@@ -2,7 +2,11 @@
 
 <p align="center">Easily create browser extensions/add-ons for browsers like Chrome, Firefox, or Edge.</p>
 
+<p align="center">
+    <a href="https://pypi.org/project/extension-maker/"><img src="https://raw.githubusercontent.com/hemucode/extension-maker/refs/heads/main/maker.PNG" alt="PyPI Version"></a>
 
+    <a href="https://www.codehemu.com/p/donate.html"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0beer-gray?logo=buy-me-a-coffee" alt="Donate"></a>
+</p>
 ## Getting Started
 
 ### Prerequisites
