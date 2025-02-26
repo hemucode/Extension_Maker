@@ -7,7 +7,7 @@ from extension_maker import __version__ as version
 setup(
     name="extension-maker",
     version=version,
-    url="https://github.com/hemucode/extension-maker",
+    url="https://www.codehemu.com/p/extension-maker.html",
     license="MIT",
     author="Hemanta Gayen",
     description="Easily create browser extensions/add-ons for browsers like Chrome, Firefox, or Edge.",

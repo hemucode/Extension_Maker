@@ -1,3 +1,0 @@
-[console_scripts]
-extension-maker = extension_maker.__main__:run
-extensionmaker = extension_maker.__main__:run
