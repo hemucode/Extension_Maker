@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: extension-maker
-Version: 1.0.1
+Version: 1.0.2
 Summary: Easily create browser extensions/add-ons for browsers like Chrome, Firefox, or Edge.
 Home-page: https://github.com/hemucode/extension-maker
 Author: Hemanta Gayen
@@ -22,7 +22,6 @@ Classifier: Programming Language :: Python :: 3.12
 Classifier: Programming Language :: Python :: 3.13
 Classifier: Operating System :: Microsoft :: Windows
 Classifier: Operating System :: POSIX :: Linux
-Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: tk>=0.1.0
@@ -37,7 +36,6 @@ Dynamic: keywords
 Dynamic: license
 Dynamic: project-url
 Dynamic: requires-dist
-Dynamic: requires-python
 Dynamic: summary
 
 <h1 align="center">Extension Maker</h1>

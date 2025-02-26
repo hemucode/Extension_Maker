@@ -9,8 +9,6 @@
 
 - Python: 3.6-3.12
 
-_To have the interface displayed in the images, you will need Chrome. If Chrome is not installed or `--default-browser` is passed, the default browser will be used._
-
 ### Installation and Usage
 
 #### Installing via [PyPI](https://pypi.org/project/extension-maker/)

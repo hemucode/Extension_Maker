@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 from tkinter.constants import W
 from tkinter import ttk
 
-import json,os,requests,random
+import json,os,requests,random,webbrowser
 from . import config, maker
 
 
@@ -637,8 +637,23 @@ def create_extension():
     OpenFolder(extension_folder)
     root.quit()
 
-generate_button = tk.Button(root, text = "Generate Extension", font=('calibre',10, 'bold'),width=30, height=2, command=create_extension)
+generate_button = tk.Button(root, text = "Generate Extension", borderwidth = '2',font=('calibre',10, 'bold'),width=30, height=2, command=create_extension)
 generate_button.grid(row=9, column=2,  padx=10, columnspan=2)
+
+def openHome():
+    webbrowser.open("https://www.codehemu.com/p/extension-maker.html")
+
+def openGithub():
+    webbrowser.open("https://github.com/hemucode/extension-maker")    
+
+homepage_button = tk.Button(root, text = "Homepage", font=('calibri', 10, 'bold', 'underline'),
+                foreground = 'red',width=20, height=2, command=openHome)
+homepage_button.grid(row=10, column=2,  padx=10)
+
+github_button = tk.Button(root, text = "Github", font=('calibri', 10, 'bold', 'underline'),
+                foreground = 'red' ,width=20, height=2, command=openGithub)
+github_button.grid(row=10, column=3)
+
 
 
 
